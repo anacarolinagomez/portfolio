@@ -1,0 +1,74 @@
+:root {
+  --primary-blue: #0047AB; /* Deep Blue as requested */
+  --light-gray: #f8f9fa;
+  --text-dark: #1a1a1a;
+}
+
+/* Smooth scrolling enabled */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.text-blue {
+  color: var(--primary-blue);
+}
+
+.btn-blue {
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 4px;
+  padding: 12px 30px;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.btn-blue:hover {
+  background-color: var(--primary-blue);
+  opacity: 0.9;
+  color: white;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+/* Portfolio Item Styling (Inspired by zachwise.com) */
+.portfolio-item {
+  border-top: 2px solid #eee;
+  padding-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.item-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item:hover {
+  border-top-color: var(--primary-blue);
+}
+
+#contact-section a:hover {
+  color: var(--primary-blue) !important;
+  text-decoration: underline !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-3 { font-size: 2.5rem; }
+}
